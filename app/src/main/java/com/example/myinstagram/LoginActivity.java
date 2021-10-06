@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void done(ParseException e) {
                         if (e == null) {
                             // let them use the app now
-                            loginUser(username, password);
+                            Toast.makeText(LoginActivity.this,"Account Created Successfully!", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(LoginActivity.this,"Issue with login!", Toast.LENGTH_SHORT).show();
                         }
