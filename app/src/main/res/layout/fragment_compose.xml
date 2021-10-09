@@ -5,14 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".fragments.ComposeFragment">
-
-    <EditText
-        android:id="@+id/etDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Description..." />
 
     <Button
         android:id="@+id/btnCaptureImage"
@@ -26,11 +20,20 @@
         android:layout_height="200dp"
         tools:srcCompat="@tools:sample/avatars" />
 
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Description..." />
+
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"/>
+        android:backgroundTint="@color/blue"
+        android:text="Post"/>
 
     <Button
         android:id="@+id/btnLogout"
